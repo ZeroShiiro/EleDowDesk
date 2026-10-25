@@ -61,4 +61,4 @@ EleDowDesk/
 
 ## License
 
-MIT (planned)
+MIT – see [LICENSE](LICENSE)
