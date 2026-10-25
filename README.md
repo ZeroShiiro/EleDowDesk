@@ -1,8 +1,8 @@
 # EleDowDesk
 
-**Clipboard, files, and mouse sharing between elementary OS and Windows.**
+**Clipboard, files, and mouse sharing between Windows and Linux.**
 
-EleDowDesk connects a Windows PC and an elementary OS laptop using both **Wi-Fi** and **Bluetooth**. It automatically chooses the best available path.
+EleDowDesk lets you share clipboard contents, transfer files, and move mouse control between a Windows machine and a Linux machine (including elementary OS on Wayland). It uses both **Wi-Fi** and **Bluetooth**, automatically choosing the best available path.
 
 ## Features
 
@@ -16,15 +16,18 @@ Nothing else. No keyboard sharing, no notifications, no media controls.
 
 ## Platforms
 
-| Side         | OS                        | Role                            |
-|--------------|---------------------------|---------------------------------|
-| Primary host | Windows 10 / 11           | PC (Preferrably Ethernet)       |
-| Mobile       | elementary OS (Wayland)   | Laptop                          |
+| OS | Notes |
+|----|--------|
+| **Windows 10 / 11** | Fully supported target |
+| **Linux (Wayland)** | elementary OS, and other distributions with portal / libei support |
+| **Linux (X11)** | Planned / partial |
+
+Works with any combination of the above (desktop + laptop, two desktops, etc.).
 
 ## How it works
 
-1. Both machines run the EleDowDesk daemon + tray.
-2. They discover each other via mDNS (Wi-Fi) and Bluetooth LE.
+1. Install and run EleDowDesk on both machines.
+2. Devices discover each other via mDNS (Wi-Fi) and Bluetooth LE.
 3. First connection requires a short pairing code.
 4. After pairing, a secure session is maintained.
 5. Traffic is routed automatically:
@@ -34,7 +37,7 @@ Nothing else. No keyboard sharing, no notifications, no media controls.
 
 ## Status
 
-**Early development** — Architecture defined, Python implementation starting.
+**Early development** — Architecture defined, Python implementation in progress.
 
 ## Project Structure
 
@@ -55,9 +58,8 @@ EleDowDesk/
 ## Requirements (target)
 
 - Python 3.11+
-- Windows 10/11
-- elementary OS 7/8 (Wayland)
-- Bluetooth adapter on both machines (recommended)
+- Windows 10/11 and/or Linux (Wayland preferred)
+- Bluetooth adapter recommended on both machines
 
 ## License
 

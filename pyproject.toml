@@ -5,14 +5,14 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "eledowdesk"
 version = "0.1.0"
-description = "Clipboard, files, and mouse sharing between elementary OS and Windows using Wi-Fi + Bluetooth"
+description = "Clipboard, files, and mouse sharing between Windows and Linux using Wi-Fi + Bluetooth"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
 authors = [
     {name = "EleDowDesk Contributors"}
 ]
-keywords = ["clipboard", "file-transfer", "mouse", "wifi", "bluetooth", "elementary", "windows"]
+keywords = ["clipboard", "file-transfer", "mouse", "wifi", "bluetooth", "windows", "linux", "wayland"]
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: End Users/Desktop",
