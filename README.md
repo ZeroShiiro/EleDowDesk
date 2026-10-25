@@ -18,7 +18,7 @@ Nothing else. No keyboard sharing, no notifications, no media controls.
 
 | Side         | OS                        | Role                            |
 |--------------|---------------------------|---------------------------------|
-| Primary host | Windows 10 / 11           | Always-on PC (usually Ethernet) |
+| Primary host | Windows 10 / 11           | PC (Preferrably Ethernet)       |
 | Mobile       | elementary OS (Wayland)   | Laptop                          |
 
 ## How it works
